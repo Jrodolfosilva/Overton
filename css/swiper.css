@@ -1,0 +1,18 @@
+.swiper-slide{
+    width: 100vw;
+    height: 100vh;
+    padding: 6rem 13rem;
+    position: relative;
+    background-image: url("../assets/foto-home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.slide-content{
+    position: absolute;
+    top: 40%;
+    background-color: red;
+    color: #fff;
+}

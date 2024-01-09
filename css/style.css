@@ -10,9 +10,7 @@ header{
     text-align: center;
     padding:2rem;
     
-    position: fixed;
-    width: 100%;
-    z-index: 99;
+   
     background-color: var(--bg-color);
     
 }
@@ -91,11 +89,9 @@ header > nav{
 }
 
 
-
-
 .container_services_home{
-   padding:6rem 4rem; 
-   text-align: center;
+   padding:13rem 2rem; 
+   text-align: left;
 
 }
 
@@ -103,19 +99,20 @@ header > nav{
 .container_services_home__title{
     margin-bottom:6rem ;
     position: relative;
+    font-size: 30px;
+    padding-bottom: 2.5rem;
 }
 
 
 .container_services_home__title::after{
     content: "";
     display: block;
-    width: 3rem;
-    height: 0.1rem;
+    width:10rem;
+    height: 0.2rem;
     background-color: var(--text-color);
     position: absolute;
-    top: 5rem;
-    left: 50%;
-    margin-left: -1.5rem;
+    top: 100%;
+    
 }
 
 
@@ -126,15 +123,33 @@ header > nav{
 }
 
 
-
 .container_slide_home__list_services > li{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;    
+    text-align: left;
     gap: 1rem;
+
+    
 }
 
+
+.container_slide_home__list_services > li:not(:last-of-type){
+    margin-bottom: 3rem;
+}
+
+
+.container_slide_home__list_services > li > h4{
+    font-size: 20px;
+
+}
+
+
+.container_slide_home__list_services > li > p{
+    font-family: inherit;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
 
 
 
