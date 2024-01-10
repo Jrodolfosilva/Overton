@@ -152,10 +152,48 @@ header > nav{
 }
 
 
+.container_portfolio_home{
+
+}
+
+.container_portfolio_home__list_jobs{
+    display: grid;
+    columns: 1;
+}
+
+.container_portfolio_home__list_jobs > li{
+    position: relative;
+
+}
 
 
+.container_portfolio_home__list_jobs > li> a> img{
+    
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.container_portfolio_home__list_jobs > li > a > div{
+    position: absolute;
+    top: 50%;
+    width: 70%;
+    padding:1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.705);
+}
 
 
+.container_portfolio_home__list_jobs > li > a > div > h5{
+    font-size: 1.8rem;
+
+} 
+    
+
+
+.container_portfolio_home__list_jobs > li > a > div > p{
+
+    margin-top: 0.8rem;
+    
+} 
 
 
 
