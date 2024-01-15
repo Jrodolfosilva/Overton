@@ -36,6 +36,6 @@ a{
     color: var(--text-color);
 }
 
-h1,h2,h4,h5,button{
+h1,h2,h4,h5,button,a{
     font-family: 'Montserrat', sans-serif;
 }

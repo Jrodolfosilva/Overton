@@ -18,6 +18,7 @@ header{
 
 .hidden{
     display: none;
+   
 }
 
 
@@ -35,23 +36,30 @@ header > nav{
     gap: 3rem;
     background-color: var(--bg-color);
     z-index:2;
-   
+    
 }
+
 
 .menu_list,.menu_list_contact{
     display: flex;
     flex-direction: column;
     gap: 3rem;
     font-size: 1.8rem;
+    
 
+}
+
+
+.menu_list > li > a,.menu_list_contact > li > a{
+    font-size: 1.6rem;
 }
 
 
 .menu_list_contact > li{
     padding: 1.2rem 2.4rem;
     border:0.1rem solid var(--text-color);
-    border-radius:2rem;
 }
+
 
 
 .menu_list_contact > li:last-child{
