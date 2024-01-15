@@ -45,12 +45,6 @@ header > nav > ul{
     overflow-y: auto;
 }
 
-.show > ul{
-    overflow-y: auto;
-    width: 100%;
-    gap: 2rem;
-}
-
 .show >ul> li > a{
     display: block;
     width: 100%;
