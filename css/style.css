@@ -235,11 +235,26 @@ header > nav > ul{
 
 
 
+.container_clients{
+    background-color: #0C0C0C;
+    padding: 6rem 3rem;
+}
 
+.container_clients ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: space-between;
+}
 
-
-
-
+.container_clients ul li{
+    padding: 1rem;
+    border: 0.1rem solid #aeaeae;
+}
+.container_clients ul li img{
+    width: 12rem;
+}
 
 
 
