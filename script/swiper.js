@@ -33,3 +33,28 @@ const swiper = new Swiper('.swiper', {
       }
     }
   });
+
+
+  /* Slide testimony */
+
+
+  const swiperTestimony = new Swiper('.slide-testimony', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination-testimony',
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+       
+      }
+    }
+  });
