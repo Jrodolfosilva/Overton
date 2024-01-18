@@ -195,149 +195,149 @@ header > nav > ul{
 }
 
 .container_portfolio_home__list_jobs{
-    display: grid;
-    columns: 1;
+display: grid;
+columns: 1;
 }
 
 .container_portfolio_home__list_jobs > li{
-    position: relative;
-
+position: relative;
 }
 
-
 .container_portfolio_home__list_jobs > li> a> img{
-    
-    min-width: 100%;
-    max-width: 100%;
+min-width: 100%;
+max-width: 100%;
 }
 
 .container_portfolio_home__list_jobs > li > a > div{
-    position: absolute;
-    top: 50%;
-    width: 70%;
-    padding:1rem 2rem;
-    background-color: rgba(0, 0, 0, 0.705);
+position: absolute;
+top: 50%;
+width: 70%;
+padding:1rem 2rem;
+background-color: rgba(0, 0, 0, 0.705);
 }
 
-
 .container_portfolio_home__list_jobs > li > a > div > h5{
-    font-size: 1.8rem;
-
+font-size: 1.8rem;
 } 
-    
-
 
 .container_portfolio_home__list_jobs > li > a > div > p{
-
-    margin-top: 0.8rem;
-    
+margin-top: 0.8rem;  
 } 
 
-
-
 .container_clients{
-    background-color: #0C0C0C;
-    padding: 9rem 2rem;
+background-color: #0C0C0C;
+padding: 9rem 2rem;
 }
 
 .container_clients ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    justify-content: space-between;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 0.8rem;
+justify-content: space-between;
 }
 
 .container_clients ul li{
-    padding: 0.5rem;
-    border: 0.1rem solid #aeaeae;
+padding: 0.5rem;
+border: 0.1rem solid #aeaeae;
 }
+
 .container_clients ul li img{
-    width: 12rem;
+width: 12rem;
 }
-
-
 
 .about_services,.about_our{
-    padding:6rem 2rem ;
-    display: flex;
-    flex-wrap: wrap;
+padding:6rem 2rem ;
+display: flex;
+flex-wrap: wrap;
 }
 
+.about_our{
+    padding-bottom: 0;
+}
 
 .about_services > img, .about_our > img{
-    width: 100%;
-    margin-top: 6rem;
+width: 100%;
+margin-top: 6rem;
 }
-
 
 .about_services__content{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 3rem;
-
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 3rem;
 }
 
-.about_services__content h2{
-    margin-bottom: 6rem;
-    position: relative;
-    font-size: 30px;
-    padding-bottom: 2.5rem;
+.about_services__content h2, .container_meet  h2, .footer_cta h2{
+margin-bottom: 6rem;
+position: relative;
+font-size: 30px;
+padding-bottom: 2.5rem;
 }
 
-
-.about_services__content h2::after{
-    content: "";
-    display: block;
-    width: 10rem;
-    height: 0.2rem;
-    background-color: var(--text-color);
-    position: absolute;
-    top: 100%;
-
+.about_services__content h2::after,.container_meet  h2::after,.footer_cta  h2::after{
+content: "";
+display: block;
+width: 10rem;
+height: 0.2rem;
+background-color: var(--text-color);
+position: absolute;
+top: 100%;
 }
-
 
 .about_services__content span{
-
-    padding-left: 2rem;
-    position: relative;
-
+padding-left: 2rem;
+position: relative;
 }
 
 .about_services__content span::before{
-    display: block;
-    content: "";
-    position: absolute;
-    top:50%;
-    left: 0%;
-    margin-top: -0.2rem;
-    width: 0.4rem;
-    height: 0.4rem;
-    border-radius: 50%;
-    background-color: var(--text-color);
-
+display: block;
+content: "";
+position: absolute;
+top:50%;
+left: 0%;
+margin-top: -0.2rem;
+width: 0.4rem;
+height: 0.4rem;
+border-radius: 50%;
+background-color: var(--text-color);
 }
-
 
 .about_services__content a{
-    border: 0.1rem solid var(--text-color);
-    padding: 1.5rem 2.5rem;
-    text-align: center;
+border: 0.1rem solid var(--text-color);
+padding: 1.5rem 2.5rem;
+text-align: center;
 }
 
+.container_meet{
+background-color: #0C0C0C;
+padding: 9rem 2rem;
+}
 
+.container_meet div img{
+width: 100%;
+margin: 1rem auto;
+}
 
+.footer_cta{
+padding: 9rem 2rem;
+background-image: url("../assets/bg-footer-cta.jpg");
+background-size: cover;
+background-position: top;
+background-color: red;
+}
 
+.footer_cta div{
+text-align: left;
+}
 
+.footer_cta a{
+border: 0.1rem solid var(--text-color);
+padding: 1.5rem 2.5rem;
+text-align: center;
 
-
-
-
-
-
+}
 
 
 
