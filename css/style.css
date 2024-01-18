@@ -237,7 +237,7 @@ header > nav > ul{
 
 .container_clients{
     background-color: #0C0C0C;
-    padding: 6rem 3rem;
+    padding: 9rem 2rem;
 }
 
 .container_clients ul {
@@ -249,7 +249,7 @@ header > nav > ul{
 }
 
 .container_clients ul li{
-    padding: 1rem;
+    padding: 0.5rem;
     border: 0.1rem solid #aeaeae;
 }
 .container_clients ul li img{
@@ -257,6 +257,76 @@ header > nav > ul{
 }
 
 
+
+.about_services,.about_our{
+    padding:6rem 2rem ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.about_services > img, .about_our > img{
+    width: 100%;
+    margin-top: 6rem;
+}
+
+
+.about_services__content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+
+}
+
+.about_services__content h2{
+    margin-bottom: 6rem;
+    position: relative;
+    font-size: 30px;
+    padding-bottom: 2.5rem;
+}
+
+
+.about_services__content h2::after{
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 0.2rem;
+    background-color: var(--text-color);
+    position: absolute;
+    top: 100%;
+
+}
+
+
+.about_services__content span{
+
+    padding-left: 2rem;
+    position: relative;
+
+}
+
+.about_services__content span::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top:50%;
+    left: 0%;
+    margin-top: -0.2rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: var(--text-color);
+
+}
+
+
+.about_services__content a{
+    border: 0.1rem solid var(--text-color);
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+}
 
 
 
