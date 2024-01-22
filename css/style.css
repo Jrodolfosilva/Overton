@@ -7,7 +7,8 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 2rem 0rem;
-position: relative;
+position: fixed;
+width: 100%;
 text-align: center;
 padding:2rem;
 z-index: 99;
@@ -104,6 +105,7 @@ transform: rotate(-130deg);
 
 .container_slide_home{
 height: auto;
+padding-top: 7rem;
 }
 
 .container_services_home{
@@ -160,7 +162,7 @@ line-height: 2.8rem;
 
 
 .container_portfolio_home{
-
+padding: 0 2rem;
 }
 
 .container_portfolio_home__list_jobs{
@@ -355,6 +357,29 @@ flex-flow: row wrap;
 justify-content: space-between;
 }
 
+.container_portfolio_home__list_jobs {
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: 2 ;
+}
+
+.container_portfolio_home__list_jobs li:nth-child(1){
+grid-column: 1;
+grid-row: 1;
+}
+
+
+.container_portfolio_home__list_jobs li:nth-child(3){
+grid-column: 3 / 5;
+grid-row: 1;
+}
+
+
+.container_portfolio_home__list_jobs li:nth-child(4){
+grid-column:  1/3;
+grid-row: 2;
+}
+
 .container_clients ul li {
 max-width: 160px;
 }
@@ -376,6 +401,9 @@ width: 40%;
 .footer_cta div a{
     margin-top: 3rem;
 }
+
+
+
 
 
 }
@@ -458,14 +486,20 @@ text-align: center;
 
 
 
-
-
-
-
-
     
 }
 
+
+@media (min-width:1440px) {
+
+    .container_testimony{
+        padding: 9rem 40rem;
+    }
+
+    .container_clients{
+        padding: 9rem 20rem;
+    }
+}
 
 
 
