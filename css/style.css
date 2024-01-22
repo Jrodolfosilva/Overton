@@ -225,6 +225,10 @@ flex-wrap: wrap-reverse;
 }
 
 .about_our{
+flex-wrap: wrap;
+}
+
+.about_our{
 padding-bottom: 0;
 }
 
@@ -235,17 +239,20 @@ margin-bottom: 6rem;
 
 .about_services__content{
 display: flex;
-align-items: center;
-flex-wrap: wrap;
-justify-content: space-between;
-gap: 3rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 1.2rem;
+}
+
+.about_services__content ul li{
+    margin-top: 1rem;
 }
 
 .about_services__content h2, .container_meet  h2, .footer_cta h2{
-margin-bottom: 6rem;
+margin-bottom: 1rem;
 position: relative;
 font-size: 30px;
-padding-bottom: 2.5rem;
+padding-bottom: 1.5rem;
 }
 
 .about_services__content h2::after,.container_meet  h2::after,.footer_cta  h2::after{
@@ -281,6 +288,7 @@ background-color: var(--text-color);
 border: 0.1rem solid var(--text-color);
 padding: 1.5rem 2.5rem;
 text-align: center;
+margin-top: 2rem;
 }
 
 .container_meet{
@@ -356,15 +364,31 @@ align-items: center;
 justify-content: center;
 }
 
+.footer_cta{
+display: flex;
+justify-content: flex-end;
+}
+
+.footer_cta div{
+width: 40%;
+}
+
+.footer_cta div a{
+    margin-top: 3rem;
+}
+
+
 }
 
 
 
-/*
+
+@media (min-width:1024px) {
+    
 .menu_list_mobile{
 display: none;
 }
-
+        
 header > nav{
 position: static;
 height: auto;
@@ -372,16 +396,76 @@ width: 100%;
 flex-direction: row;
 justify-content: right;
 }
-
+        
 header nav ul{
 overflow: auto;
 }
+
 .menu_list,.menu_list_contact{
 display: flex;
 flex-direction: row;
 gap: 3rem;
 }
-   
+
+.container_services_home,
+    .container_portfolio_home, 
+    .container_testimony, 
+    .container_clients,
+    .container_about_home,
+    .container_meet,.footer_cta{
+        padding: 9rem;
+    }
+.container_about_home{
+    padding: 9rem 0rem;
+}
+
+.about_services, .about_our{
+padding: 0px;
+flex-wrap: nowrap;
+}
+
+.about_services__content{
+    padding: 5rem 9rem;
+    min-width: 50%;
+    justify-content: center;
+}
+
+.about_services > img, .about_our > img {
+width: 50%;
+margin-bottom: 0;
+
+}
+
+.container_meet h2{
+text-align: center;
+}
+
+.container_meet h2::after{
+    left: 50%;
+    margin-left: -5rem;
+}
+
+.container_meet div{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+
+}
+
+.container_meet div img{
+    width: 33.33%;
+}
 
 
-*/
+
+
+
+
+
+
+    
+}
+
+
+
+
