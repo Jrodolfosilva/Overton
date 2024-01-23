@@ -24,6 +24,8 @@ body{
    
     color: var(--text-color);
     font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.004);
 
 }
 
@@ -42,4 +44,14 @@ h1,h2,h4,h5,h6,h7,h8,button,a{
 
 p{
     line-height: 3rem;
+}
+
+.button{
+max-width: 16rem;
+transition: 0.5s;
+}
+
+.button:hover{
+background-color: var(--text-color);
+color: var(--bg-color);
 }

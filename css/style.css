@@ -12,7 +12,6 @@ width: 100%;
 text-align: center;
 padding:2rem;
 z-index: 99;
-max-height: 70px;
 background-color: var(--bg-color);   
 }
 
@@ -286,11 +285,13 @@ border-radius: 50%;
 background-color: var(--text-color);
 }
 
-.about_services__content a{
+.button{
+display: block;
 border: 0.1rem solid var(--text-color);
 padding: 1.5rem 2.5rem;
 text-align: center;
 margin-top: 2rem;
+width: 16rem;
 }
 
 .container_meet{
@@ -315,12 +316,9 @@ background-color: red;
 text-align: left;
 }
 
-.footer_cta a, footer a{
-border: 0.1rem solid var(--text-color);
-padding: 1.5rem 2.5rem;
-text-align: center;
-display: inline-block;
 
+.footer_cta a{
+    margin-top: 3rem;
 }
 
 footer{
@@ -392,14 +390,18 @@ justify-content: center;
 .footer_cta{
 display: flex;
 justify-content: flex-end;
+
 }
 
 .footer_cta div{
 width: 40%;
+
+
 }
 
 .footer_cta div a{
     margin-top: 3rem;
+        
 }
 
 
@@ -412,7 +414,7 @@ width: 40%;
 
 
 @media (min-width:1024px) {
-    
+
 .menu_list_mobile{
 display: none;
 }
@@ -423,10 +425,40 @@ height: auto;
 width: 100%;
 flex-direction: row;
 justify-content: right;
+overflow-y: visible;
+
+}
+
+header > nav > ul{
+overflow-y:visible ;
 }
         
-header nav ul{
-overflow: auto;
+
+
+header nav ul li a{
+position: relative;
+}
+
+.menu_list li a {
+padding: 1rem;
+}
+
+.menu_list li a::after{
+content: "";
+display: block;
+position: absolute;
+top: 100%;
+width: 0%;
+height: 0.15rem;
+background-color: var(--text-color);
+transition: 1s ease-in-out;
+
+}
+
+.menu_list li a:hover::after{
+width: 100%;
+height: 0.18rem;
+
 }
 
 .menu_list,.menu_list_contact{
@@ -434,6 +466,9 @@ display: flex;
 flex-direction: row;
 gap: 3rem;
 }
+
+
+
 
 .container_services_home,
     .container_portfolio_home, 
