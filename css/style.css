@@ -59,17 +59,26 @@ font-size: 1.8rem;
 font-size: 1.6rem;
 }
 
-.menu_list_contact > li{
+.menu_list_contact > li a{
+display: block;
 padding: 1.2rem 2.4rem;
 border:0.1rem solid var(--text-color);
+transition: 0.5s;
 }
 
-.menu_list_contact > li:last-child{
+.menu_list_contact > li:first-child a:hover{
 background-color: var(--text-color);
+color: var(--bg-color);
 }
 
-.menu_list_contact > li:last-child > a{
+.menu_list_contact > li:last-child  a{
+background-color: var(--text-color);
 color: var(--bg-color);
+}
+
+.menu_list_contact > li:last-child a:hover{
+background-color: transparent;
+color: var(--text-color);
 }
 
 .menu_list_mobile{
@@ -323,9 +332,7 @@ text-align: left;
 
 footer{
 padding: 6rem 2rem;
-display: flex;
-flex-wrap: wrap;
-gap: 3rem;
+text-align: center;
 }
 
 
@@ -382,11 +389,6 @@ grid-row: 2;
 max-width: 160px;
 }
 
-footer{
-align-items: center;    
-justify-content: center;
-}
-
 .footer_cta{
 display: flex;
 justify-content: flex-end;
@@ -395,8 +397,6 @@ justify-content: flex-end;
 
 .footer_cta div{
 width: 40%;
-
-
 }
 
 .footer_cta div a{
@@ -479,7 +479,7 @@ gap: 3rem;
         padding: 9rem;
     }
 .container_about_home{
-    padding: 9rem 0rem;
+padding: 9rem 0rem;
 }
 
 .about_services, .about_our{
@@ -488,9 +488,9 @@ flex-wrap: nowrap;
 }
 
 .about_services__content{
-    padding: 5rem 9rem;
-    min-width: 50%;
-    justify-content: center;
+padding: 5rem 9rem;
+min-width: 50%;
+justify-content: center;
 }
 
 .about_services > img, .about_our > img {
@@ -504,36 +504,39 @@ text-align: center;
 }
 
 .container_meet h2::after{
-    left: 50%;
-    margin-left: -5rem;
+left: 50%;
+margin-left: -5rem;
 }
 
 .container_meet div{
-    display: flex;
-    gap: 3rem;
-    margin-top: 3rem;
+display: flex;
+gap: 3rem;
+margin-top: 3rem;
 
 }
 
 .container_meet div img{
-    width: 33.33%;
+width: 33.33%;
 }
 
 
-
+.footer_cta div{
+    width: 26%;
+}
     
 }
 
 
 @media (min-width:1440px) {
 
-    .container_testimony{
-        padding: 9rem 40rem;
-    }
+.container_testimony{
+padding: 9rem 40rem;
+}
 
-    .container_clients{
-        padding: 9rem 20rem;
-    }
+.container_clients{
+padding: 9rem 20rem;
+}
+
 }
 
 
