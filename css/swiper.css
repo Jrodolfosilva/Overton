@@ -140,7 +140,7 @@ transition: background-size 100s linear;
 }
     
 .container_slide_home .swiper-slide-active{
-background-size: 200% 160%;
+background-size: 160% 120%;
 }
 
 .slide-content > p{
